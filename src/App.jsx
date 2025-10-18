@@ -1,3 +1,4 @@
+
 import Taskform from "./Components/Taskform";
 import TaskList from "./Components/TaskList";
 import Progresstracker from "./Components/Progresstracker";
@@ -34,7 +35,7 @@ export default function App() {
       <TaskList tasks = {tasks} 
       updateTask = {updateTask}
       deleteTask = {deleteTask}/>
-      <Progresstracker />
+      <Progresstracker tasks = {tasks}/>
       <button>Clear all tasks</button>
     </div>
   )
